@@ -26,6 +26,10 @@ require 'spec_helper'
           product.should_not be_valid
         end
 
+        it "should be invalid if no price present" do
+          product.price_in_cents = nil
+          product.should_not be_valid
+        end
     end
   
 end
