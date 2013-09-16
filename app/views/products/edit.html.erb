@@ -1,3 +1,5 @@
 <h1>Edit Page</h1>
 
 <%= render 'form' %>
+
+<%= link_to 'Delete Product', @product, :confirm => "Are you sure?", method: :delete %> 
