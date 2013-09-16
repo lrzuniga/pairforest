@@ -1,3 +1,10 @@
 <h1>Index/Products</h1>
 
+<% @products.each do |product| %>
+  <ul>
+    <li><%= link_to product_name, product %></li>
+    <p><%= product.description %></p>
+    <p><%= product.price_in_cents %></p>
+  </ul>
+<% end %>
 
