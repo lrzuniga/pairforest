@@ -20,6 +20,12 @@ require 'spec_helper'
           product.name = nil
           product.should_not be_valid
         end
+
+        it "should be invalid with no description" do
+          product.description = nil
+          product.should_not be_valid
+        end
+
     end
   
 end
