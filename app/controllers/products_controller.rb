@@ -8,6 +8,13 @@ def new
 end
 
 def create
+  @product = Product.new(products_params)
+  @product.save
+  redirect_to @product
+end
+
+def show
+  @product = Product.find(params[:id])  
 end
 
 
