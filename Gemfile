@@ -43,3 +43,12 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development, :test do 
+  gem "rspec"
+  gem "rspec-rails"
+  gem "autotest"
+  gem "autotest-standalone"
+  gem 'debugger'
+  gem 'factory_girl_rails', '~> 4.2'#, :require => false {add this snippet if in rails 3}
+end
