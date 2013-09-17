@@ -4,7 +4,7 @@
   <ul>
     <li><%= link_to product.name, product %></li>
     <p><%= product.description %></p>
-    <p><%= product.price_in_cents %></p>
+    <p><%= formatted_price(product.price) %></p>
   </ul>
 <% end %>
 

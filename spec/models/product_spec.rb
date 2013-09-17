@@ -8,6 +8,11 @@ require 'spec_helper'
     it "should have a valid factory" do
       product.should be_valid
       end
+
+      it "should display in dollars and cents" do 
+        product.price_in_cents.to_string == 1200.99
+      end   
+
     end
     
     context "Invalid" do
