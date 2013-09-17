@@ -31,6 +31,7 @@ GEM
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
     autotest-standalone (4.5.11)
+    bcrypt-ruby (3.0.1)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -142,6 +143,7 @@ PLATFORMS
 DEPENDENCIES
   autotest
   autotest-standalone
+  bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 4.0.0)
   debugger
   factory_girl_rails (~> 4.2)

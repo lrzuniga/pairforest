@@ -1,4 +1,10 @@
 Pairforest::Application.routes.draw do
+  get "users/new"
+  get "users/showedit"
+  get "users/update"
+  get "users/index"
+  get "users/create"
+  get "users/destroy"
   resources :products
   resources :users
   # The priority is based upon order of creation: first created -> highest priority.
